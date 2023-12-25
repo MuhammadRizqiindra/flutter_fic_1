@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_fic_1/common/global_variables.dart';
 import 'package:flutter_fic_1/data/models/auth_response_model.dart';
+import 'package:flutter_fic_1/data/models/request/login_request_model.dart';
 import 'package:flutter_fic_1/data/models/request/register_request_model.dart';
 import 'package:http/http.dart' as http;
 
@@ -22,4 +23,8 @@ class AuthRemoteDatasource {
       return const Left('Server error');
     }
   }
+
+  logout() {}
+
+  login(LoginRequestModel model) {}
 }

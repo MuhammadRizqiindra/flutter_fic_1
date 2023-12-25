@@ -14,4 +14,6 @@ class AuthLocalDatasource {
     final authModel = AuthResponseModel.fromJson(authJson);
     return authModel.jwtToken;
   }
+
+  void removeAuthData() {}
 }
